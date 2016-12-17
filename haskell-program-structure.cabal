@@ -1,0 +1,23 @@
+name: haskell-program-structure
+version: 0.1
+cabal-version: >=1.8
+build-type: Simple
+license: BSD3
+license-file: LICENSE
+maintainer: corentin.dupont@gmail.com
+synopsis: An example of program strcture in Haskell
+author: Corentin Dupont
+extra-source-files: AUTHORS README
+
+executable mygame
+    main-is: Main.hs
+    build-depends: base,
+                   lens,
+                   mtl
+    
+    hs-source-dirs: src
+    ghc-options: -W -threaded
+
+source-repository head
+  type:              git
+  location:          https://github.com/cdupont/haskell-program-structure.git
